@@ -1,0 +1,18 @@
+<agenda>
+  <!--You have a CHOICE of the next 2 items at this level-->
+  <entrada>
+    <nome>string</nome>
+    <email>string</email>
+    <telefone id="string" tipo="anySimpleType">e gero</telefone>
+  </entrada>
+  <grupo gid="string">
+    <!--You have a CHOICE of the next 3 items at this level-->
+    <entrada>
+      <nome>string</nome>
+      <email>string</email>
+      <telefone id="string" tipo="anySimpleType">cum sonoras</telefone>
+    </entrada>
+    <grupo/>
+    <ref apontado="string"/>
+  </grupo>
+</agenda>

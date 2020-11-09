@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+    <xs:element name="agenda">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="entrada"/>
+                <xs:element ref="grupo"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="entrada">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="nome"/>
+                <xs:element ref="email"/>
+                <xs:element ref="telefone"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="nome" type="xs:string"/>
+    <xs:element name="email" type="xs:string"/>
+    <xs:element name="telefone">
+        <xs:complexType mixed="true">
+            <xs:attribute name="id" use="required" type="xs:ID"/>
+            <xs:attribute name="tipo"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="grupo">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="entrada"/>
+                <xs:element ref="grupo"/>
+                <xs:element ref="ref"/>
+            </xs:choice>
+            <xs:attribute name="gid" use="required" type="xs:ID"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ref">
+        <xs:complexType>
+            <xs:attribute name="apontado" use="required" type="xs:IDREF"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

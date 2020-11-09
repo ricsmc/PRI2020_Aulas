@@ -1,0 +1,29 @@
+jcr@di.uminho.pt
+subject: PRI2020::A84302::...
+		PG....
+
+Aplicação web
+
+|Comp:         |           |Internet|
+|              | <-pedido- |        | <-pedido- PC
+|Prog1 <=>Dados|           |        | 
+
+
+
+http- hypertext transfer protocol
+smtp - short message
+
+protocolo - os pedidos são feitos a máquinas sejam estruturados de maneiras similares
+
+
+C-create
+R-retrieve
+U-update
+D-delete
+
+
+usar mongodb sem compass
+filesystem
+M-model (dados)
+V-View (interface)
+C-controller (controlador) *cria a ponte entre os dados e a interface grafica

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=utf-8">
+        <title>Fishbook - Manual do Esturjão</title>
+        <link rel="stylesheet" type="text/css" href="tpc1.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <body>
+        <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:13%;" id="mySidebar">
+            
+            <a href="tpc1.html" class="w3-bar-item w3-button">Sobre</a>
+            <a href="tpc1-location.html" class="w3-bar-item w3-button">Localização</a>
+            <a href="#" class="w3-bar-item w3-button">Caviar</a>
+            <a href="https://www.patreon.com/europe" class="w3-bar-item w3-button">Doar</a>
+          </div>
+          
+          <div class="w3-main" style="margin-left:200px">
+          
+            
+          <div class="w3-indigo">
+            <div class="w3-container">
+              <h1>Fishbook</h1>
+              <p>Manual do Esturjão</p>
+            </div>
+            </div>
+          </div>
+          
+          <div style="margin-left:15%; margin-right: 2%;">
+            <h1>Caviar</h1>
+            O caviar é um alimento, considerado uma iguaria de luxo, consistindo em ovas de esturjão não-fertilizadas, 
+            sem qualquer tipo de aditivo, corante ou preservante. As ovas podem ser "frescas" (não-pasteurizadas) ou 
+            pasteurizadas, tendo estas um menor valor monetário.
+
+            Tradicionalmente a designação "caviar" é apenas utilizada para as ovas provenientes das espécies selvagens de 
+            esturjão, principalmente as do Mar Cáspio e seus afluentes, de acordo com regra da Rússia ou do Irã (caviar Beluga,
+             Ossetra e Sevruga). Estas ovas, consoante a sua qualidade (sabor, tamanho, consistência e cor), atingem preços entre 
+             6.000€ e 12.000€ o quilo, no mercado europeu ocidental, estando associadas a ambientes gourmet e de alta cozinha 
+             (haute cuisine).
+             <div class="w3-content w3-display-container" style="width: 50%; margin-left: 25%; margin-top: 1%; margin-bottom: 2%;">
+             <img class="mySlides" src="media/caviar-beluga-tsar-imperial1.jpg" style="width:100%">
+             <img class="mySlides" src="media/caviar3_b9b75d73-a974-4929-aa3f-b60192ad699a.jpg" style="width:100%">
+             <img class="mySlides" src="media/61XiMNdNwxL._SX522_.jpg" style="width:100%">
+             <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+             <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+          </div>
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = x.length} ;
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                x[slideIndex-1].style.display = "block";
+                }
+            </script>
+                
+    </body>
+</html>
